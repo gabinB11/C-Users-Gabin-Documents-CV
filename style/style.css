@@ -1,0 +1,166 @@
+/* =====================================================
+   RESET & BASE
+===================================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff6ed;
+    font-family: "Arial", sans-serif;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* =====================================================
+   CONTAINERS DE SECTIONS
+===================================================== */
+.container_clair,
+.container_sombre {
+    width: 100%;
+    padding: 3rem 1.5rem;
+}
+
+.container_sombre {
+    background-color: #e4d4c4;
+}
+
+/* Limite la largeur du contenu */
+.container_clair > div,
+.container_sombre > div {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* =====================================================
+   TITRES
+===================================================== */
+.titre {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    font-weight: 400;
+}
+
+.h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* =====================================================
+   TEXTE D’INTRODUCTION
+===================================================== */
+.texte1 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.info_intro {
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    line-height: 1.8;
+    white-space: normal;
+    word-break: normal;
+}
+
+/* =====================================================
+   LISTES (PARCOURS, COMPÉTENCES, ETC.)
+===================================================== */
+ul {
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.8rem;
+    font-size: clamp(1rem, 2.3vw, 1.4rem);
+}
+
+/* =====================================================
+   BLOCS COMPÉTENCES / QUALITÉS
+===================================================== */
+.BLOC {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.BLOC > div {
+    flex: 1 1 280px;
+}
+
+/* =====================================================
+   CONTACT
+===================================================== */
+.contact {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.raw {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    min-width: 160px;
+    text-align: center;
+}
+
+.icon span {
+    font-size: 1rem;
+}
+
+/* =====================================================
+   RESPONSIVE – MOBILE FIRST
+===================================================== */
+@media (max-width: 600px) {
+
+    .container_clair,
+    .container_sombre {
+        padding: 2rem 1rem;
+    }
+
+    .BLOC {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .raw {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
