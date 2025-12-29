@@ -1,88 +1,93 @@
-body{
+body {
     background-color: #fff6ed;
+    margin: 0;
 }
 
-.container_clair{
+.container_clair {
     margin-inline: auto;
     padding-bottom: 0.1vh;
     width: 100%;
 }
 
-.container_sombre{
+.container_sombre {
     background-color: #e4d4c4;
     margin-inline: auto;
     padding-bottom: 0.1vh;
     width: 100%;
 }
 
-h1{
+h1 {
     font-size: 3.2rem;
     font-weight: normal;
     margin-bottom: 0;
 }
 
-h2{
-    font-size: 2.2rem; 
+h2 {
+    font-size: 2.2rem;
     margin-left: 2rem;
     font-weight: normal;
 }
 
-.titre{
+.titre {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.texte1{
+.texte1 {
     width: 68%;
-    flex-wrap: wrap;
+    display: flex;          /* correction */
+    flex-wrap: wrap;        /* maintenant valide */
 }
 
-.info_intro{
+.info_intro {
     font-size: 1.5rem;
     line-height: 2rem;
     margin-left: 12rem;
 }
 
-.liste_scolaire li{
-    font-size: 1.5rem;
-}
-
-.liste_scolaire{
+.liste_scolaire {
     margin-left: 10rem;
 }
 
-.BLOC{
+.liste_scolaire li {
+    font-size: 1.5rem;
+}
+
+.BLOC {
     display: flex;
     justify-content: space-around;
 }
 
-.icon{
+.icon {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.raw{
+.raw {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.contact{
+.contact {
     display: flex;
     justify-content: center;
 }
 
 @media screen and (max-width: 450px) {
-    h1{
+    h1 {
         font-size: 2.5rem;
     }
-    h2{
+
+    h2 {
         font-size: 1.5rem;
         margin-left: 0;
     }
-    .h2{
+
+    .h2 {
         display: flex;
-        justify-self: center;
+        justify-content: center;
     }
 }
