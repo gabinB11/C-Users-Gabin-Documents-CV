@@ -28,6 +28,12 @@ h2 {
     font-weight: normal;
 }
 
+h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-left: 12rem;
+}
+
 .titre {
     display: flex;
     justify-content: center;
@@ -41,6 +47,12 @@ h2 {
 }
 
 .info_intro {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-left: 12rem;
+}
+
+.xp{
     font-size: 1.5rem;
     line-height: 2rem;
     margin-left: 12rem;
@@ -77,6 +89,7 @@ h2 {
 }
 
 @media screen and (max-width: 450px) {
+
     h1 {
         font-size: 2.5rem;
     }
@@ -84,10 +97,41 @@ h2 {
     h2 {
         font-size: 1.5rem;
         margin-left: 0;
+        text-align: center;
+    }
+
+    h3 {
+        margin-left: 1rem;
+        font-size: 1.2rem;
     }
 
     .h2 {
         display: flex;
         justify-content: center;
+    }
+
+    /* IMPORTANT : on annule les grosses marges */
+    .info_intro,
+    .xp {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .liste_scolaire {
+        margin-left: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    /* Bloc compétences / qualités */
+    .BLOC {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    /* Footer */
+    .raw {
+        flex-direction: column;
+        gap: 1.5rem;
     }
 }
